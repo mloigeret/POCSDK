@@ -26,7 +26,7 @@ class POCSDKViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = POCColor.getSpecialColor()
+        view.backgroundColor = .green
         setupUI()
     }
 

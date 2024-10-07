@@ -12,15 +12,11 @@ let package = Package(
             name: "POCSDK",
             targets: ["POCSDK"]),
     ],
-    dependencies: [
-        .package(path: "Development Packages/POCColor")
-    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "POCSDK",
-            dependencies: ["POCColor"]),
+            name: "POCSDK"),
         .testTarget(
             name: "POCSDKTests",
             dependencies: ["POCSDK"]

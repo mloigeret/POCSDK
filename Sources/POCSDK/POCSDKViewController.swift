@@ -5,6 +5,7 @@
 //  Created by Manuel Loigeret on 2024-10-02.
 //
 
+import POCColor
 import UIKit
 
 class POCSDKViewController: UIViewController {
@@ -25,7 +26,7 @@ class POCSDKViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = POCColor.getSpecialColor()
         setupUI()
     }
 

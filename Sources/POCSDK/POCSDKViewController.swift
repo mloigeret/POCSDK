@@ -6,6 +6,7 @@
 //
 
 import POCColor
+import SwiftHEXColors
 import UIKit
 
 class POCSDKViewController: UIViewController {
@@ -21,12 +22,13 @@ class POCSDKViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Close", for: .normal)
         button.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
+        button.setTitleColor(UIColor(hexString: "#00AAFF"), for: .normal)
         return button
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = POCColor.getSpecialColor()
         setupUI()
     }
 

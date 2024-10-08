@@ -1,2 +1,2 @@
 # POCSDK
-New version 0.0.2
+New version 0.0.4

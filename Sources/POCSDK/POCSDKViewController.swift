@@ -5,7 +5,7 @@
 //  Created by Manuel Loigeret on 2024-10-02.
 //
 
-//import POCColor
+import POCColor
 import SwiftHEXColors
 import UIKit
 
@@ -28,8 +28,8 @@ class POCSDKViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //view.backgroundColor = POCColor.getSpecialColor()
-        view.backgroundColor = .red
+        view.backgroundColor = POCColor.getSpecialColor()
+        //view.backgroundColor = .red
         setupUI()
     }
 

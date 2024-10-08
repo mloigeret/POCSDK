@@ -20,7 +20,10 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "POCSDK",
-            dependencies: ["SwiftHEXColors"]),
+            dependencies: ["POCColor", "SwiftHEXColors"]),
+        .target(
+            name: "POCColor",
+            dependencies: []),
         .testTarget(
             name: "POCSDKTests",
             dependencies: ["POCSDK"]
